@@ -6,8 +6,6 @@ char simb_1 = 0;        // Definetasis simbols Nr. 1
 char simb_2 = 0;        // Definetasis simbols Nr. 2
 char simb_3 = 0;        // Definetasis simbols Nr. 3
 
-int allsimbs();
-
 int allsimbs (){
 printf(" \n");
 printf(" \n");
