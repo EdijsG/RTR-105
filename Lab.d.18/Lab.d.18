@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<math.h>
+
+double f(double x){
+return cos(x/2);
+}
+
+float  mf(float x, float A)
+
+int main(){
+printf("\t\t Dihadomijas metode cos(x/2)\n\t\t Lai veiktu aprēķinus ar doto formulu nepieciešams definēt diapazonu starp punktiem a un b>
+scanf("%f",&a);
+printf("\t Definēt punktu: b ")
+scanf("%f",&a);;
+
+                float a, b*M_PI,/*pi <math.h> constante*/ x, delta_x=1.e-3/*0.001*/, funkca, funkcb, funkcx;
+                float modified_cos(float x, float A)
+                {
+                return cos(x/2)-A;
+                }
+
+        int k=0;
+
+funkca = mf(a, A); funkcb = mf(b, A); // vai pareizi tiek rēķināt dotā funkcija cos(x/2)??
+        if(funkca*funkcb>0)
+        {       //Ja zīme ir + pāra sakņu skaits vai sakņu nav 
+        printf("Intervālā [%.2f;%.2f] cos(x/2) funkcijai\n",a,b);
+        printf("Sakes nav (vai tajā ir pāra skaita saknes)\n");
+        return 1;
+        }
+
+        printf("                cos(%7.3f) = %7.3f\t\t\t\t",a,f(a, A));
+        printf("cos(%7.3f)=%7.3f\n",b,f(b));
+
+while((b-a)>delta_x)
+        { /*Ja ir zīmes maiņa (nepāra skaita saknes,) [b-a] = intervāla gaums = ar funkciju x=(a+b)/2 = fukcija (x/2)*/
+        k++; // Samazina Intervālu b-a > detla X uz PUSI kamēr b-a < delt X (funkca = atupveni +0 funkcb =aptuveni -0 ) 
+        x = (a+b)/2;
+                if(funkcija*f) //pie a=0 -> funkca=0 -> reizinājums ir precīzi 0 visu laiku -> visu laiku "reķina" b=x
+                a = x; //ja zīme mainās (nav pozetīva -x*+x = -... )
+                        else 
+                        b = x //ja zīme mainās (nav pozetīva +x*-x = -...)
+                        printf("%2d. iterācija: cos(%7.3f)=%7.3f\t\n",k,a,f);
+                        printf("cos(%7.3f)=%7.3f\t\n",x,f);
+                        printf("cos(%7.3f)=%7.3f\n",b,f(b/2));
+        }
+
+printf("Sakne atrodas pie x=%.3f,jo cos(x/2) ir %.3f\n",x,f);
+
+return 0;
+}
