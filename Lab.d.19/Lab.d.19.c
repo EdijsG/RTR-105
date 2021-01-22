@@ -35,7 +35,7 @@ int main(){
                 y[i] = f(x[i]);         /*Aprēķina un piešķir jaunās funkcijas vērtību nākamajā argumentā */
                 }
 
-        for(int i=0; i<N-1               /*-1 Lai nepārsniegtu dotos robež punktus*/; i++){/*Atvasinājuma masīva aprēķināšana*/
+        for(int i=0; i<N-1/*-1 Lai nepārsniegtu dotos robež punktus*/; i++){/*Atvasinājuma masīva aprēķināšana*/
                 yp[i] = (y[i+1]-y[i]) / (x[i+1]-x[i]);
                 }
 
