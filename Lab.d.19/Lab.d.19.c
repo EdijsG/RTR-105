@@ -1,4 +1,4 @@
-  GNU nano 4.8                                                                                                                      19.Nodarbība.c                                                                                                                                 
+  GNU nano 4.8                                                                                                                      19.Nodarbība.c                                                                                                                       Modified  
 #include<stdio.h>
 #include<math.h>
 #define N 100           /*Masīvs N = punktu skaits kuros tiks rēķināta dotā funkcija cos(x/2) */
@@ -47,13 +47,20 @@ int main(){
                 printf("    x     ||    f(x)   ||    f'(x)    ||   f'(x)  ||    f''(x)   | f''(x)    \n");
                 printf("          ||           || Analytical  || Finite   ||  Analytical | Finite    \n");
                 printf("__________||___________||_____________||__________||_____________|___________\n");
-                printf("%10.3lf   ||%10.3lf     ||%10.3lf     ||%10.3lf   ||%10.3lf      |%10.3lf     \n",x[i], y[i], fp(x[i]), yp[i], fpp(x[i]), ypp[i]);
+                        for(i=0; i<N-2; i++);{
+                                printf("%10.3lf   ||%10.3lf     ||%10.3lf     ||%10.3lf   ||%10.3lf      |%10.3lf    \n",x[i], y[i], fp(x[i]), yp[i], fpp(x[i]), ypp[i]);
+                                }
+
+                printf("%10.3lf   ||%10.3lf     ||%10.3lf     ||%10.3lf   ||%10.3lf      |%10s    \n",x[i], y[i], fp(x[i]), yp[i], fpp(x[i]), "Nav");
+                i++;
+                printf("%10.3lf   ||%10.3lf     ||%10.3lf     ||%10s      ||%10.3lf      |%10s    \n",x[i], y[i], fp(x[i]), "Nav", fpp(x[i]), "Nav");
+
                 }
         }
 
 
 
-/*fpirintf = */
+                                /*fpirintf = terminālī atspoguļo datus no norādītā faila */
 
 
 
@@ -63,4 +70,3 @@ printf("     ||          || Analytical   || Finite  ||  Analytical | Finite    "
 printf("_____||__________||______________||_________||_____________|___________");
 printf("     ||          ||              ||         ||             |            ");
 */
-
