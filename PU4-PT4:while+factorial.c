@@ -62,19 +62,18 @@ int main(){
       while(i<=skaitlis){
           longNum = longNum * i;
           c=c*i;
-            i++;
-            if (longNum != c)
-            {
-                break;
+          i++;
+              if(longNum != c){
+                  break;
+                }
             }
-        }
-            if(i>21)
-            {
+    
+            if(i>21){
                 printf("Ar šo datu tipu nav iespējams aprēķināt jūsu ievadīto skaitli");
-            }
-            else
-            {
+               }
+    
+            else{
                 printf("Faktoriāls no skaitļa %d ir %lld\n", skaitlis, longNum);
+               }
             }
-    }
-}
+      }
