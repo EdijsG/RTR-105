@@ -1,4 +1,4 @@
-  GNU nano 4.8                                                                                                                      19.Nodarbība.c                                                                                                                       Modified  
+                                                                                                                    19.Nodarbība.c                                                                                                                       Modified  
 #include<stdio.h>
 #include<math.h>
 #define N 100           /*Masīvs N = punktu skaits kuros tiks rēķināta dotā funkcija cos(x/2) */
@@ -18,10 +18,10 @@ double fpp(double x){   /*Ortrās kārtas atvasinājums funkcijai cos(x/2)''*/
 
 
 int main(){
-        double x[N], y[N], yp[N-1], ypp[N-2], a/*a = Robežas sākum punkts*/ /*b = Robežas beigu punkts */ /*x = kordināte kurā tiek rēķināta formula*/, delta_x;/*delta_x = punkts ar kuru pārvietojas x asī*/
-        int i;/*conter = kutā darbība*/
+        double x[N], y[N], yp[N-1], ypp[N-2], a /*a = Robežas sākum punkts*/ /*b = Robežas beigu punkts */ /*x = kordināte kurā tiek rēķināta formula*/, delta_x;/*delta_x = punkts ar kuru pārvietojas x asī*/
+        int i;                                  /*conter = kutā darbība*/
 
-                printf("Lai aprēķinātu cos(x/2) prim1, prom2. Izmantojot diffrencēšanas formulu\n");
+                printf("Lai aprēķinātu cos(x/2) prim1, prim2. Izmantojot diffrencēšanas formulu\n");
                 printf("Piešķirt vērtību robežas sākumpunktu a :");
                 scanf("%lf/*double datu tips*/", &a);
 //              printf("Piešķirt vērtību robežas beigupunktam b :");
@@ -30,12 +30,12 @@ int main(){
                 scanf("%lf/*double datu tips*/", &delta_x);
 
 
-        for(int i=0; i<N; i++/*+1 Nepieciešams lai virzītos uz nākamo koordinātes punktu*/){
+        for(int i=0; i<N; i++           /*+1 Nepieciešams lai virzītos uz nākamo koordinātes punktu*/){
                 x[i] = a + i * delta_x; /*Aprēķina argumentu*/
-                y[i] = f(x[i]); /*Aprēķina un piešķir jaunās funkcijas vērtību nākamajā argumentā */
+                y[i] = f(x[i]);         /*Aprēķina un piešķir jaunās funkcijas vērtību nākamajā argumentā */
                 }
 
-        for(int i=0; i<N-1/*-1 Lai nepārsniegtu dotos robež punktus*/; i++){/*Atvasinājuma masīva aprēķināšana*/
+        for(int i=0; i<N-1               /*-1 Lai nepārsniegtu dotos robež punktus*/; i++){/*Atvasinājuma masīva aprēķināšana*/
                 yp[i] = (y[i+1]-y[i]) / (x[i+1]-x[i]);
                 }
 
