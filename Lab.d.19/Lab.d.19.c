@@ -21,7 +21,7 @@ int main(){
         double x[N], y[N], yp[N-1], ypp[N-2], a/*a = Robežas sākum punkts*/ /*b = Robežas beigu punkts */ /*x = kordināte kurā tiek rēķināta formula*/, delta_x;/*delta_x = punkts ar kuru pārvietojas x asī*/
         int i;/*conter = kutā darbība*/
 
-                printf("Lai parēķinātu cos(x/2) prim1, prom2. Izmantojot diffrencēšanas formulu\n");
+                printf("Lai aprēķinātu cos(x/2) prim1, prom2. Izmantojot diffrencēšanas formulu\n");
                 printf("Piešķirt vērtību robežas sākumpunktu a :");
                 scanf("%lf/*double datu tips*/", &a);
 //              printf("Piešķirt vērtību robežas beigupunktam b :");
